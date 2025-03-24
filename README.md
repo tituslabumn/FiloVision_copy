@@ -1,6 +1,4 @@
 # filoVision: a platform that uses deep learning and tip markers to automate filopodia analysis
-
-**Important: To run filoTips locally on Windows devices, please use the accompanied yaml file for correct package versions**
   
 ## Description
 filoVision contains two Google Colab notebooks, ["filoTips"](https://colab.research.google.com/drive/1mL7U63-lltjMoTKgpcUbhK-iV0GoYz3L) and ["filoSkeleton"](https://colab.research.google.com/drive/1-61DTdWYXMIecJqjE5nWMFue2JJBbuBj), used to automate the tedious act of quantifying filopodia. filoTips was developed to analyze the filopodia of cells expressing a fluorescent tip marker alone without requiring a labeled cytoskeleton. filoSkeleton, on the other hand, combines a tip marker and an actin label for when more precise stalk lengths of long, curved filopodia are needed.
@@ -33,6 +31,8 @@ The default filoVision models and train/test data will also be available on Bioi
 ### Dependencies
 #### ZeroCostDL4Mic
 Training a deep learning model on representative data is crucial for proper accuracy with just about any deep learning tool. Training these models can be challenging for those with minimal experience with libraries like TensorFlow and Keras. Thus, we exploited the impressive "ZeroCostDL4Mic" framework to empower anyone with the ability to train their own model and plug it into filoVision.
+#### Local Runs
+To run filoTips locally on Windows devices, please use the included yaml file to create your working environment. 
 
 #### Hardware and software
 Because the notebooks were developed in a Google Colab environment, the hardware and software dependencies for filoVision are minimal. Since filoVision runs in the cloud, most modern computers should be able to run it as long as they have access to the internet.
